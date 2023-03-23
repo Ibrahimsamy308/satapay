@@ -44,16 +44,16 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="{{url('landing')}}" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-server me-3"></i>SataPay</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                  {{-- <img src="{{asset('img/logo.png')}}" alt="Logo"> --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="{{url('landing')}}" class="nav-item nav-link active">Home</a>
                         <a class="nav-item nav-link">Services</a>
                         <a href="" class="nav-item nav-link">About</a>
                         {{-- <a href="domain.html" class="nav-item nav-link">Domain</a>
@@ -68,7 +68,7 @@
                         </div> --}}
                         <a href="{{url('contact')}}" class="nav-item nav-link">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    {{-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> --}}
                     <a href="" class="btn btn-secondary py-2 px-4 ms-3">Join Us</a>
                 </div>
             </nav>
@@ -77,17 +77,19 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5">
                         <div class="col-lg-6 pt-5 text-center text-lg-start">
-                            <h1 class="display-4 text-white mb-4 animated slideInLeft">Shared Hosting</h1>
-                            <p class="text-white animated slideInLeft">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd.</p>
+                            <h1 class="display-4 text-white mb-4 animated slideInLeft">SataPay</h1>
+                            <p class="text-white animated slideInLeft">With Sata pay, you benefit from the best loyalty points system that makes you get more special promotions, while ensuring the highest level of services provided.</p>
                             <h1 class="text-white mb-4 animated slideInLeft">
-                                <small class="align-top fw-normal" style="font-size: 15px; line-height: 25px;">Starting:</small>
-                                <span>$2.49</span>
-                                <small class="align-bottom fw-normal" style="font-size: 15px; line-height: 33px;">/ Mo</small>
+                                {{-- <small class="align-top fw-normal" style="font-size: 15px; line-height: 25px;">Starting:</small> --}}
+                                <span>Download Now</span>
+                                {{-- <small class="align-bottom fw-normal" style="font-size: 15px; line-height: 33px;">/ Mo</small> --}}
                             </h1>
-                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Get Started Now</a>
+                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Google Play</a>
+                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Google Play</a>
+                            {{-- <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Google Play</a> --}}
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
+                            <img class="img-fluid animated zoomIn" src="{{asset('img/satapay.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -97,7 +99,7 @@
 
 
         <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
+        {{-- <div class="modal fade" id="searchModal" tabindex="-1">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
                     <div class="modal-header border-0">
@@ -111,12 +113,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Full Screen Search End -->
 
 
         <!-- Domain Search Start -->
-        <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+        {{-- <div class="container-xxl domain mb-5" style="margin-top: 90px;">
             <div class="container px-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
@@ -157,7 +159,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Domain Search End -->
 
 
@@ -167,15 +169,15 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-4">
-                            <h1 class="mb-2">Welcome to GreenHost</h1>
+                            <h1 class="mb-2">Welcome to SataPay</h1>
                         </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="mb-4">Sata Pay is a single platform with everything you need to send and receive your financial payments electronically to individuals, merchants, companies, software platforms and markets, and all electronic payment and bill payment services, all in one integrated application in an easy and flexible way to meet all customer needs.</p>
                         <div class="row g-3">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="bg-light rounded text-center p-4">
                                     <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
                                     <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                    <p class="mb-0">Experts</p>
+                                    <p class="mb-0">Services</p>
                                 </div>
                             </div>
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
@@ -189,13 +191,13 @@
                                 <div class="bg-light rounded text-center p-4">
                                     <i class="fa fa-check fa-2x text-primary mb-2"></i>
                                     <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                    <p class="mb-0">Projects</p>
+                                    <p class="mb-0">Locations</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{{asset('img/photo.png')}}">
                     </div>
                 </div>
             </div>
@@ -204,7 +206,7 @@
 
 
         <!-- Pricing Start -->
-        <div class="container-xxl py-5">
+        {{-- <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Our Hosting Plans</h1>
@@ -291,69 +293,68 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Pricing End -->
 
 
-        <!-- Comparison Start -->
+        <!-- Services Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Shared VS Dedicated Server</h1>
-                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos
-                        ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                    <h1 class="mb-3">Services</h1>
+                    <p class="mb-1">One platform with everything you need to send and receive your financial payments electronically to individuals, merchants, companies, software platforms and markets, and all electronic payment services provided by Sata pay in one integrated application in an easy and flexible way to meet all customer needs.</p>
                 </div>
                 <div class="row g-5 comparison position-relative">
                     <div class="col-lg-6 pe-lg-5">
                         <div class="section-title position-relative mx-auto mb-4 pb-4">
-                            <h3 class="fw-bold mb-0">Shared Server</h3>
+                            <h3 class="fw-bold mb-0">Our Services</h3>
                         </div>
                         <div class="row gy-3 gx-5">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                                 <i class="fa fa-server fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <h5 class="fw-bold">Internet bills</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                 <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">100% Secured</h5>
+                                <h5 class="fw-bold">Ground and Mobile bills</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <i class="fa fa-cog fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">Control Panel</h5>
+                                <h5 class="fw-bold">Donations</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                                 <i class="fa fa-headset fa-3x text-primary mb-3"></i>
-                                <h5 class="fw-bold">24/7 Support</h5>
+                                <h5 class="fw-bold">Installments and loans</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 ps-lg-5">
                         <div class="section-title position-relative mx-auto mb-4 pb-4">
-                            <h3 class="fw-bold mb-0">Dedicated Server</h3>
+                            <h3 class="fw-bold mb-0">Our Services</h3>
                         </div>
                         <div class="row gy-3 gx-5">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                                 <i class="fa fa-server fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <h5 class="fw-bold">Insurances</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                 <i class="fa fa-shield-alt fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">100% Secured</h5>
+                                <h5 class="fw-bold">Financial transactions</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <i class="fa fa-cog fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">Control Panel</h5>
+                                <h5 class="fw-bold">Online payments</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                                 <i class="fa fa-headset fa-3x text-secondary mb-3"></i>
-                                <h5 class="fw-bold">24/7 Support</h5>
+                                <h5 class="fw-bold">Airline Tickets</h5>
                                 <p>Ipsum dolor diam stet stet kasd diam sea stet sed rebum dolor ipsum</p>
                             </div>
                         </div>
@@ -364,8 +365,9 @@
         <!-- Comparison Start -->
 
 
+       
         <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        {{-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container px-lg-5">
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
@@ -422,12 +424,99 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Testimonial End -->
+
+         <!-- Aboutus Start -->
+         <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">About US</h1>
+                        </div>
+                        <p class="mb-4">Sata Pay is a single platform with everything you need to send and receive your financial payments electronically to individuals, merchants, companies, software platforms and markets, and all electronic payment and bill payment services, all in one integrated application in an easy and flexible way to meet all customer needs.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Services</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-check fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Locations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="{{asset('img/photo.png')}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Aboutus End -->
+
+
+          <!-- Location Start -->
+          <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                            <h1 class="mb-3">Location</h1>
+                            {{-- <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p> --}}
+                        </div>
+                        {{-- <div class="position-relative w-100 my-3 wow fadeInUp" data-wow-delay="0.3s">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your domain name">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Search</button>
+                        </div> --}}
+                        <div class="row g-3 wow fadeInUp" data-wow-delay="0.5s">
+                            {{-- <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.com</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.net</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.org</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.us</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.eu</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                                <h5 class="fw-bold text-primary mb-1">.co.uk</h5>
+                                <p class="mb-0">$9.99/year</p>
+                            </div> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Domain Search End -->
 
 
         <!-- Team Start -->
-        <div class="container-xxl py-5">
+        {{-- <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Our Team Members</h1>
@@ -493,7 +582,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Team End -->
         
 
@@ -501,37 +590,36 @@
         <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
                 <div class="row gy-5 gx-4 pt-5">
-                    <div class="col-12">
+                    {{-- <div class="col-12">
                         <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
                         <div class="position-relative" style="max-width: 400px;">
                             <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                             <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-5 col-md-12">
                         <div class="row gy-5 g-4">
                             <div class="col-md-6">
                                 <h5 class="fw-bold text-white mb-4">About Us</h5>
+                                <a class="btn btn-link" href="{{url('landing')}}">Home</a>
+                                <a class="btn btn-link" href="">Services</a>
                                 <a class="btn btn-link" href="">About Us</a>
-                                <a class="btn btn-link" href="">Contact Us</a>
-                                <a class="btn btn-link" href="">Privacy Policy</a>
-                                <a class="btn btn-link" href="">Terms & Condition</a>
-                                <a class="btn btn-link" href="">Support</a>
+                                <a class="btn btn-link" href="{{url('contact')}}">Contact Us</a>
                             </div>
                             <div class="col-md-6">
                                 <h5 class="fw-bold text-white mb-4">Our Services</h5>
-                                <a class="btn btn-link" href="">Domain Register</a>
-                                <a class="btn btn-link" href="">Shared Hosting</a>
-                                <a class="btn btn-link" href="">VPS Hosting</a>
-                                <a class="btn btn-link" href="">Dedicated Hosting</a>
-                                <a class="btn btn-link" href="">Reseller Hosting</a>
+                                <a class="btn btn-link" > Register</a>
+                                <a class="btn btn-link" >Shared </a>
+                                <a class="btn btn-link" >VPS </a>
+                                <a class="btn btn-link" >Dedicated </a>
+                                <a class="btn btn-link" >Reseller </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>26 DR . Hussenein Abd El Qader , Nasr City - Cairo , Egypt </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+01270707274</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -540,17 +628,17 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mt-lg-n5">
+                    {{-- <div class="col-md-6 col-lg-4 mt-lg-n5">
                         <div class="bg-light rounded" style="padding: 30px;">
                             <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
                             <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
                             <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
                             <button class="btn btn-primary w-100 py-2">Send Message</button>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
-            <div class="container px-lg-5">
+            {{-- <div class="container px-lg-5">
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -569,13 +657,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <!-- Footer End -->
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        {{-- <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> --}}
     </div>
 
     <!-- JavaScript Libraries -->

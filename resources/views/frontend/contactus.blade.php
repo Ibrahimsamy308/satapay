@@ -45,16 +45,16 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="{{url('landing')}}" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-server me-3"></i>SataPay</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    {{-- <img src="{{asset('img/logo.png')}}" alt="Logo"> --}}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="{{url('landing')}}" class="nav-item nav-link">Home</a>
                         <a class="nav-item nav-link">Services</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         {{-- <a href="domain.html" class="nav-item nav-link">Domain</a>
@@ -69,7 +69,7 @@
                         </div> --}}
                         <a href="{{url('contact')}}" class="nav-item nav-link active">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    {{-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> --}}
                     <a href="" class="btn btn-secondary py-2 px-4 ms-3">Join Us</a>
                 </div>
             </nav>
@@ -77,7 +77,7 @@
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 pt-5">
-                        <div class="col-12 text-center text-lg-start">
+                        {{-- <div class="col-12 text-center text-lg-start">
                             <h1 class="display-4 text-white animated slideInLeft">Contact Us</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center justify-content-lg-start animated slideInLeft">
@@ -86,7 +86,7 @@
                                     <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
                                 </ol>
                             </nav>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
 
 
         <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
+        {{-- <div class="modal fade" id="searchModal" tabindex="-1">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
                     <div class="modal-header border-0">
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Full Screen Search End -->
 
 
@@ -117,8 +117,8 @@
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Contact For Any Query</h1>
-                    <p class="mb-1">Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+                    <h1 class="mb-3">Contact For Any Problem</h1>
+                    <p class="mb-1">SataPay will help you in anytime at anywhere.</p>
                 </div>
                 <div class="row g-5">
                     <div class="col-lg-7 col-md-6">
@@ -160,13 +160,13 @@
                         <div class="section-title position-relative mx-auto mb-4 pb-4">
                             <h3 class="fw-bold mb-0">Customer Support</h3>
                         </div>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>26 DR . Hussenein Abd El Qader , Nasr City</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+01270707274</p>
                         <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                        <div class="border rounded text-center p-4 mt-4">
+                        {{-- <div class="border rounded text-center p-4 mt-4">
                             <h3 class="fw-bold mb-4">Need Any Help?</h3>
                             <a class="btn btn-primary py-3 px-5" href="">Let's Chat</a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -178,37 +178,36 @@
         <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
                 <div class="row gy-5 gx-4 pt-5">
-                    <div class="col-12">
+                    {{-- <div class="col-12">
                         <h5 class="fw-bold text-white mb-4">Subscribe Our Newsletter</h5>
                         <div class="position-relative" style="max-width: 400px;">
                             <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                             <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-5 col-md-12">
                         <div class="row gy-5 g-4">
                             <div class="col-md-6">
                                 <h5 class="fw-bold text-white mb-4">About Us</h5>
+                                <a class="btn btn-link" href="{{url('landing')}}">Home</a>
+                                <a class="btn btn-link" href="">Services</a>
                                 <a class="btn btn-link" href="">About Us</a>
-                                <a class="btn btn-link" href="">Contact Us</a>
-                                <a class="btn btn-link" href="">Privacy Policy</a>
-                                <a class="btn btn-link" href="">Terms & Condition</a>
-                                <a class="btn btn-link" href="">Support</a>
+                                <a class="btn btn-link" href="{{url('contact')}}">Contact Us</a>
                             </div>
                             <div class="col-md-6">
                                 <h5 class="fw-bold text-white mb-4">Our Services</h5>
-                                <a class="btn btn-link" href="">Domain Register</a>
-                                <a class="btn btn-link" href="">Shared Hosting</a>
-                                <a class="btn btn-link" href="">VPS Hosting</a>
-                                <a class="btn btn-link" href="">Dedicated Hosting</a>
-                                <a class="btn btn-link" href="">Reseller Hosting</a>
+                                <a class="btn btn-link" > Register</a>
+                                <a class="btn btn-link" >Shared </a>
+                                <a class="btn btn-link" >VPS </a>
+                                <a class="btn btn-link" >Dedicated </a>
+                                <a class="btn btn-link" >Reseller </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>26 DR . Hussenein Abd El Qader , Nasr City - Cairo , Egypt </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+01270707274</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -217,17 +216,17 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mt-lg-n5">
+                    {{-- <div class="col-md-6 col-lg-4 mt-lg-n5">
                         <div class="bg-light rounded" style="padding: 30px;">
                             <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name">
                             <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
                             <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message"></textarea>
                             <button class="btn btn-primary w-100 py-2">Send Message</button>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
-            <div class="container px-lg-5">
+            {{-- <div class="container px-lg-5">
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -236,23 +235,23 @@
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                         </div>
-                        <div class="col-md-6 text-center text-md-end">
+                        {{-- <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="">Home</a>
                                 <a href="">Cookies</a>
                                 <a href="">Help</a>
                                 <a href="">FQAs</a>
                             </div>
-                        </div>
-                    </div>
+                        </div> --}}
+                    {{-- </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <!-- Footer End -->
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        {{-- <a href="{{url('contact')}}" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> --}}
     </div>
 
     <!-- JavaScript Libraries -->
